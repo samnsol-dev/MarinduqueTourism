@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" content="Explore Marinduque attractions with concise destination notes and local access reminders.">
+  <title>Marinduque Tourism Guide</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to main content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Marinduque Tourism Guide home">
+      <span class="wordmark-icon" aria-hidden="true">M</span>
+      <span>MARINDUQUE <small>TOURISM GUIDE</small></span>
+    </a>
+    <a class="header-link" href="#discover">Explore destinations <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="top" tabindex="-1">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow">MIMAROPA · PHILIPPINES</p>
+        <h1 id="page-title">Explore<br><span>Marinduque.</span></h1>
+        <p class="intro-text">Find a beach, explore a landmark, or plan a day outdoors. Check local conditions and access before setting out.</p>
+        <a class="text-link" href="#discover">Browse attractions <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="intro-aside" aria-label="Guide overview">
+        <span class="aside-index">ISLAND GUIDE / 01</span>
+        <p>Coastal places, natural landmarks, and local heritage across Marinduque.</p>
+        <span class="aside-rule" aria-hidden="true"></span>
+        <span class="aside-caption">DESTINATION DETAILS MAY CHANGE</span>
+      </aside>
+    </section>
+
+    <section class="discover" id="discover" aria-labelledby="discover-title">
+      <div class="section-topline">
+        <p class="eyebrow">PLAN YOUR NEXT STOP</p>
+        <span class="island-label">MARINDUQUE · PHILIPPINES</span>
+      </div>
+      <div class="section-heading">
+        <h2 id="discover-title">Places to discover.</h2>
+        <p>Search the guide or choose a category. Confirm routes, schedules, and access with local tourism offices.</p>
+      </div>
+
+      <div class="explore-controls">
+        <div class="filters" role="group" aria-label="Filter attractions by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-button" type="button" data-filter="coast" aria-pressed="false">Beach &amp; Coast</button>
+          <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+          <button class="filter-button" type="button" data-filter="culture" aria-pressed="false">Cultural Attraction</button>
+        </div>
+        <label class="search-field">
+          <span class="search-symbol" aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Search attractions</span>
+          <input id="place-search" type="search" placeholder="Search destinations" autocomplete="off">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+      </div>
+
+      <p class="results-status" id="results-status" aria-live="polite"></p>
+      <div class="place-grid" id="place-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No destinations match. Try another name or category.</p>
+    </section>
+
+    <aside class="travel-note" aria-label="Travel information note">
+      <span class="note-index">VERIFY BEFORE YOU GO</span>
+      <p>Descriptions are brief starting points. Confirm exact access points, transport, opening hours, and current conditions with the relevant municipal tourism office.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#top"><span class="wordmark-icon" aria-hidden="true">M</span><span>MARINDUQUE <small>TOURISM GUIDE</small></span></a>
+    <span>Photo credits link to their Wikimedia Commons source.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

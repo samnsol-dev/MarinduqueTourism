@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#113e37">
+  <meta name="description" content="Discover Marinduque beaches, nature, and heritage. Search, filter, and save places for your island visit.">
+  <title>Marinduque | Island Field Guide</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to destinations</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Marinduque Island Field Guide home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-name">MARINDUQUE <small>ISLAND FIELD GUIDE</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a href="#destinations">Destinations</a>
+      <a href="#shortlist">My shortlist <span class="nav-count" id="nav-saved-count">0</span></a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> MIMAROPA · PHILIPPINES</p>
+        <h1 id="hero-title">Marinduque,<br><em>made for wandering.</em></h1>
+        <p class="hero-description">Trace a coastline, find a town landmark, or save a few island stops for later. Start with a place and check the local details before you go.</p>
+        <a class="hero-action" href="#destinations">Explore the island <span aria-hidden="true">↓</span></a>
+        <div class="hero-note"><span class="note-line" aria-hidden="true"></span><span>ISLAND NOTES, NOT A LIVE TRAVEL SERVICE</span></div>
+      </div>
+      <figure class="hero-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mount_Malindig_from_air_%28Marinduque%3B_04-22-2024%29.jpg/960px-Mount_Malindig_from_air_%28Marinduque%3B_04-22-2024%29.jpg" alt="Aerial view of Mount Malindig on Marinduque" fetchpriority="high">
+        <figcaption><span>MOUNT MALINDIG</span><a href="https://commons.wikimedia.org/wiki/File:Mount_Malindig_from_air_(Marinduque;_04-22-2024).jpg" target="_blank" rel="noreferrer">Patrickroque01 · CC BY-SA 4.0 ↗</a></figcaption>
+      </figure>
+      <div class="hero-footer"><span>COAST <b>·</b> NATURE <b>·</b> HERITAGE</span><span>MARINDUQUE ISLAND, PHILIPPINES</span></div>
+    </section>
+
+    <section class="discover" id="destinations" aria-labelledby="destinations-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">PICK YOUR NEXT STOP</p>
+          <h2 id="destinations-title">Places to get to know.</h2>
+        </div>
+        <p class="section-intro">Search by place or town, filter by kind of trip, and keep a shortlist as you browse.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="filter-group" role="group" aria-label="Filter destinations by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All places</button>
+          <button class="filter-button" type="button" data-filter="coast" aria-pressed="false">Beach &amp; coast</button>
+          <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+          <button class="filter-button" type="button" data-filter="culture" aria-pressed="false">Culture</button>
+        </div>
+        <label class="search-box">
+          <span class="search-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Search destinations by name, category, or location</span>
+          <input id="destination-search" type="search" placeholder="Search places" autocomplete="off">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+      </div>
+
+      <div class="results-row">
+        <p id="results-status" class="results-status" aria-live="polite"></p>
+        <p class="photo-note">Some destination photos still need a verified source.</p>
+      </div>
+      <div class="destination-grid" id="destination-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No destinations match. Try another search or category.</p>
+    </section>
+
+    <section class="shortlist" id="shortlist" aria-labelledby="shortlist-title">
+      <div class="shortlist-heading">
+        <div>
+          <p class="eyebrow">YOUR TRIP NOTES</p>
+          <h2 id="shortlist-title">Saved places<span class="shortlist-count" id="shortlist-count">0</span></h2>
+        </div>
+        <button class="clear-button" id="clear-saved" type="button" disabled>Clear shortlist</button>
+      </div>
+      <p class="shortlist-intro">Keep a few destinations together while you plan. Your list stays in this browser on this device.</p>
+      <p class="shortlist-empty" id="shortlist-empty">Your shortlist is empty. Save a place from the destination cards.</p>
+      <ul class="saved-list" id="saved-list" aria-label="Saved destinations"></ul>
+      <p class="save-status" id="save-status" aria-live="polite"></p>
+    </section>
+
+    <aside class="travel-note" aria-label="Travel information">
+      <span class="travel-note-label">BEFORE YOU GO</span>
+      <p>Schedules, weather, access, and local requirements can change. Confirm current details with the relevant municipal tourism office or your accommodation.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">M</span><span class="brand-name">MARINDUQUE <small>ISLAND FIELD GUIDE</small></span></a>
+    <span>Destination photos link to their credited Wikimedia Commons sources.</span>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

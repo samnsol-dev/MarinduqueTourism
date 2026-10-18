@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ee">
+  <meta name="description" content="Find beaches, heritage, island escapes, and mountain adventures in Marinduque, the heart of the Philippines.">
+  <title>Marinduque Island Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Marinduque Island Guide home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>MARINDUQUE <small>ISLAND GUIDE</small></span>
+    </a>
+    <a class="top-link" href="#discover">Explore the island <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> MIMAROPA · PHILIPPINES</p>
+        <h1 id="hero-title">A little island<br>with a <em>big heart.</em></h1>
+        <p class="hero-intro">Find your own way around Marinduque, where quiet beaches, old stories, and wild landscapes are never far apart.</p>
+        <a class="hero-cta" href="#discover">Find your next stop <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Sunlit tropical coastline and turquoise water">
+        <div class="photo-caption"><span class="caption-dot"></span> THE HEART OF THE PHILIPPINES</div>
+        <div class="island-stamp" aria-hidden="true"><span>13°</span><small>NORTH<br>OF THE EQUATOR</small></div>
+      </div>
+      <div class="hero-note"><span>01 / 05</span><span>Five places to start exploring</span></div>
+    </section>
+
+    <section class="discover" id="discover" aria-labelledby="discover-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">THE ISLAND, YOUR WAY</p>
+          <h2 id="discover-title">Find your Marinduque</h2>
+        </div>
+        <p class="section-note">From the water's edge to the old town streets, start wherever the day takes you.</p>
+      </div>
+
+      <div class="explore-tools">
+        <div class="filters" role="group" aria-label="Filter attractions by type">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All places <span>05</span></button>
+          <button class="filter-button" type="button" data-filter="coast" aria-pressed="false">Coast & islands</button>
+          <button class="filter-button" type="button" data-filter="culture" aria-pressed="false">Culture</button>
+          <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+        </div>
+        <label class="search-box">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="place-search" type="search" placeholder="Search places" aria-label="Search attractions">
+          <kbd>/</kbd>
+        </label>
+      </div>
+
+      <div class="place-grid" id="place-grid">
+        <article class="place-card" data-category="coast" data-name="poctoy white beach torrijos beach swimming">
+          <a class="place-image image-poctoy" href="https://maps.google.com/?q=Poctoy+White+Beach+Marinduque" target="_blank" rel="noreferrer" aria-label="View Poctoy White Beach on a map">
+            <span class="place-number">01</span><span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="place-info"><div class="place-meta"><span>TORRIJOS</span><span class="place-type">BEACH</span></div><h3>Poctoy White Beach</h3><p>A long sweep of pale sand and clear water on the island's eastern shore. Come for a swim, stay for the sunset.</p><a class="place-link" href="https://maps.google.com/?q=Poctoy+White+Beach+Marinduque" target="_blank" rel="noreferrer">Find it on the map <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="place-card" data-category="coast" data-name="tres reyes islands gasan island hopping snorkeling">
+          <a class="place-image image-tres-reyes" href="https://maps.google.com/?q=Tres+Reyes+Islands+Marinduque" target="_blank" rel="noreferrer" aria-label="View Tres Reyes Islands on a map">
+            <span class="place-number">02</span><span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="place-info"><div class="place-meta"><span>GASAN</span><span class="place-type">ISLANDS</span></div><h3>Tres Reyes Islands</h3><p>Three small islands just off the coast, with bright shallows and a slower pace. Ask locally about boat trips and conditions.</p><a class="place-link" href="https://maps.google.com/?q=Tres+Reyes+Islands+Marinduque" target="_blank" rel="noreferrer">Find it on the map <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="place-card" data-category="culture" data-name="boac cathedral heritage church history town">
+          <a class="place-image image-cathedral" href="https://maps.google.com/?q=Boac+Cathedral+Marinduque" target="_blank" rel="noreferrer" aria-label="View Boac Cathedral on a map">
+            <span class="place-number">03</span><span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="place-info"><div class="place-meta"><span>BOAC</span><span class="place-type">HERITAGE</span></div><h3>Boac Cathedral</h3><p>Step into the island capital's storied past at this hilltop church, then wander the nearby streets of old Boac.</p><a class="place-link" href="https://maps.google.com/?q=Boac+Cathedral+Marinduque" target="_blank" rel="noreferrer">Find it on the map <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="place-card" data-category="nature" data-name="mount malindig mountain hiking hike nature torrijos buenavista">
+          <a class="place-image image-malindig" href="https://maps.google.com/?q=Mount+Malindig+Marinduque" target="_blank" rel="noreferrer" aria-label="View Mount Malindig on a map">
+            <span class="place-number">04</span><span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="place-info"><div class="place-meta"><span>TORRIJOS / BUENAVISTA</span><span class="place-type">MOUNTAIN</span></div><h3>Mount Malindig</h3><p>Marinduque's highest peak rises above the southern landscape. Check trail access and arrange a local guide before hiking.</p><a class="place-link" href="https://maps.google.com/?q=Mount+Malindig+Marinduque" target="_blank" rel="noreferrer">Find it on the map <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="place-card" data-category="nature" data-name="bathala caves santa cruz cave caves geology nature">
+          <a class="place-image image-bathala" href="https://maps.google.com/?q=Bathala+Caves+Santa+Cruz+Marinduque" target="_blank" rel="noreferrer" aria-label="View Bathala Caves on a map">
+            <span class="place-number">05</span><span class="image-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="place-info"><div class="place-meta"><span>SANTA CRUZ</span><span class="place-type">CAVES</span></div><h3>Bathala Caves</h3><p>A network of limestone caves tucked into the island's interior. Go with a local guide and bring sturdy footwear.</p><a class="place-link" href="https://maps.google.com/?q=Bathala+Caves+Santa+Cruz+Marinduque" target="_blank" rel="noreferrer">Find it on the map <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No places match that search. Try another name or category.</p>
+    </section>
+
+    <aside class="travel-note"><span class="note-icon" aria-hidden="true">✳</span><p><strong>A note before you go</strong><br>Island conditions and access can change. Check locally for current transport, opening times, and guide requirements.</p><a href="https://philippines.travel/destinations/marinduque" target="_blank" rel="noreferrer">Plan your trip <span aria-hidden="true">↗</span></a></aside>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">M</span><span>MARINDUQUE <small>ISLAND GUIDE</small></span></a><span>Made for curious island days.</span><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>

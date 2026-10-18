@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" content="A practical guide to Marinduque's beaches, mountain trails, heritage, and traditions.">
+  <title>Marinduque Field Guide | Find Your Island Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Marinduque Field Guide home">
+      <span class="wordmark-icon" aria-hidden="true">M</span>
+      <span>MARINDUQUE <small>FIELD GUIDE</small></span>
+    </a>
+    <a class="header-link" href="#discover">Explore places <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> MIMAROPA · PHILIPPINES</p>
+        <h1 id="page-title">Marinduque,<br><span>at your own pace.</span></h1>
+        <p class="intro-text">A small island with room for a full day out. Find a stretch of coast, a mountain view, or a story in the old town.</p>
+        <a class="text-link" href="#discover">Browse the island <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="intro-photo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mount_Malindig_from_air_%28Marinduque%3B_04-22-2024%29.jpg/960px-Mount_Malindig_from_air_%28Marinduque%3B_04-22-2024%29.jpg" alt="Mount Malindig rising above the green landscape of Marinduque" fetchpriority="high">
+        <figcaption><span>MOUNT MALINDIG · 1,157 M</span><a href="https://commons.wikimedia.org/wiki/File:Mount_Malindig_from_air_(Marinduque;_04-22-2024).jpg" target="_blank" rel="noreferrer">Photo: Patrickroque01 / CC BY-SA 4.0 ↗</a></figcaption>
+      </figure>
+      <div class="intro-foot"><span>ISLAND NOTES <b>01—04</b></span><span>Four places to start exploring</span></div>
+    </section>
+
+    <section class="discover" id="discover" aria-labelledby="discover-title">
+      <div class="section-topline"><p class="eyebrow">PICK A DIRECTION</p><span class="island-label">MARINDUQUE ISLAND</span></div>
+      <div class="section-heading">
+        <h2 id="discover-title">Find your kind of day.</h2>
+        <p>Coast, culture, or a trail inland. Start with a place, then ask locally about the latest conditions.</p>
+      </div>
+
+      <div class="explore-controls">
+        <div class="filters" role="group" aria-label="Filter places by category">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All places <span>05</span></button>
+          <button class="filter-button" type="button" data-filter="coast" aria-pressed="false">Coast</button>
+          <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+          <button class="filter-button" type="button" data-filter="culture" aria-pressed="false">Culture</button>
+        </div>
+        <label class="search-field">
+          <span class="search-symbol" aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Search attractions</span>
+          <input id="place-search" type="search" placeholder="Search places or towns" autocomplete="off">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+      </div>
+
+      <p class="results-status" id="results-status" aria-live="polite">Showing 5 places</p>
+      <div class="place-grid" id="place-grid">
+        <article class="place-card" data-category="coast" data-search="ihatub beach boac swimming shoreline adis resort">
+          <figure class="place-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Brgy._Ihatub_Beach%2CBoac%2CMarinduque.JPG/960px-Brgy._Ihatub_Beach%2CBoac%2CMarinduque.JPG" alt="Visitors enjoying the shore at Ihatub Beach in Boac" loading="lazy">
+            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Brgy._Ihatub_Beach,Boac,Marinduque.JPG" target="_blank" rel="noreferrer">Totoyba2 · CC BY-SA 3.0 ↗</a></figcaption>
+          </figure>
+          <div class="card-content">
+            <div class="card-meta"><span>BOAC</span><span class="category-label">COAST</span></div>
+            <h3>Ihatub Beach</h3>
+            <p>A relaxed stretch of shoreline in Boac. The local photo source identifies the area around Adis Resort; ask ahead about swimming conditions and access.</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Ihatub+Beach+Boac+Marinduque" target="_blank" rel="noreferrer">Open location <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="coast" data-search="zigzag beach ihatub boac seashore coast">
+          <figure class="place-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Zigzag_Beach_Seashores.jpg/960px-Zigzag_Beach_Seashores.jpg" alt="Rocky and sandy shoreline at Zigzag Beach in Ihatub, Boac" loading="lazy">
+            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Zigzag_Beach_Seashores.jpg" target="_blank" rel="noreferrer">Totoyba2 · CC BY-SA 4.0 ↗</a></figcaption>
+          </figure>
+          <div class="card-content">
+            <div class="card-meta"><span>IHATUB, BOAC</span><span class="category-label">COAST</span></div>
+            <h3>Zigzag Beach</h3>
+            <p>See the unusual curves of the Ihatub shoreline, a quieter coastal stop for taking in the sea and surrounding rock formations.</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Zigzag+Beach+Ihatub+Boac+Marinduque" target="_blank" rel="noreferrer">Open location <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="nature" data-search="mount malindig mountain hiking trail torrijos buenavista summit volcano">
+          <figure class="place-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mount_Malindig_from_air_%28Marinduque%3B_04-22-2024%29.jpg/960px-Mount_Malindig_from_air_%28Marinduque%3B_04-22-2024%29.jpg" alt="Aerial view of Mount Malindig on Marinduque" loading="lazy">
+            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Mount_Malindig_from_air_(Marinduque;_04-22-2024).jpg" target="_blank" rel="noreferrer">Patrickroque01 · CC BY-SA 4.0 ↗</a></figcaption>
+          </figure>
+          <div class="card-content">
+            <div class="card-meta"><span>SOUTHERN MARINDUQUE</span><span class="category-label">NATURE</span></div>
+            <h3>Mount Malindig</h3>
+            <p>The island's highest peak is a striking landmark and a serious outdoor adventure. Confirm trail access and arrange a local guide before setting out.</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Mount+Malindig+Marinduque" target="_blank" rel="noreferrer">Open location <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="culture" data-search="boac cathedral church heritage history old town immaculate conception">
+          <figure class="place-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Simbahan_ng_Boac.jpg/960px-Simbahan_ng_Boac.jpg" alt="Boac Cathedral, a historic church in the town of Boac" loading="lazy">
+            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Simbahan_ng_Boac.jpg" target="_blank" rel="noreferrer">JMCapunitan · CC BY-SA 4.0 ↗</a></figcaption>
+          </figure>
+          <div class="card-content">
+            <div class="card-meta"><span>BOAC</span><span class="category-label">CULTURE</span></div>
+            <h3>Boac Cathedral</h3>
+            <p>Visit the historic hilltop church dedicated to the Immaculate Conception, then take time to wander Boac's old-town streets nearby.</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Boac+Cathedral+Marinduque" target="_blank" rel="noreferrer">Open location <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="place-card" data-category="culture" data-search="moriones festival holy week mogpog boac masks tradition culture">
+          <figure class="place-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Moriones_of_Marinduque.jpg/960px-Moriones_of_Marinduque.jpg" alt="A participant wearing a traditional Moriones mask and costume" loading="lazy">
+            <figcaption><a href="https://commons.wikimedia.org/wiki/File:Moriones_of_Marinduque.jpg" target="_blank" rel="noreferrer">Ranieljosecastaneda · CC BY-SA 4.0 ↗</a></figcaption>
+          </figure>
+          <div class="card-content">
+            <div class="card-meta"><span>ISLAND-WIDE · HOLY WEEK</span><span class="category-label">CULTURE</span></div>
+            <h3>Moriones Festival</h3>
+            <p>Marinduque's best-known Holy Week tradition brings masked Morions into town streets. Dates and activities vary; check the local calendar before traveling.</p>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Moriones+Festival+Marinduque" target="_blank" rel="noreferrer">Explore the island <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No places match that search. Try another name or category.</p>
+    </section>
+
+    <aside class="travel-note" aria-label="Travel note">
+      <span class="note-index">BEFORE YOU GO</span>
+      <p>Boat schedules, weather, access, and local requirements can change. Check with your accommodation or the municipal tourism office before traveling.</p>
+      <a href="https://philippines.travel/destinations/marinduque" target="_blank" rel="noreferrer">Official destination guide <span aria-hidden="true">↗</span></a>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#top"><span class="wordmark-icon" aria-hidden="true">M</span><span>MARINDUQUE <small>FIELD GUIDE</small></span></a>
+    <span>Place photos linked to their Wikimedia Commons source and license.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>
