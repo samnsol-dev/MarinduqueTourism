@@ -104,14 +104,17 @@ const destinations = [
     imageCredit: "Tomauer · CC0 1.0"
   },
   {
-    id: "bathala-caves",
-    name: "Bathala Caves",
-    category: "nature",
-    categoryLabel: "Nature",
-    location: "Exact access point needs verification",
-    description: "A cave destination on Marinduque. Verify the municipality, access point, entry requirements, and current conditions with local tourism staff.",
-    searchTerms: "bathala cave caves santa cruz",
-    image: null
+    id: "laylay-port",
+    name: "Laylay Port",
+    category: "culture",
+    categoryLabel: "Culture",
+    location: "Laylay, Boac",
+    description: "A historic port and cultural heritage site on Boac's coast. Confirm local access before visiting.",
+    searchTerms: "historic port heritage coast boac",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Laylay_Port_Boac_Marinduque.jpg/960px-Laylay_Port_Boac_Marinduque.jpg",
+    imageAlt: "Laylay Port in Boac, Marinduque",
+    imageSource: "https://commons.wikimedia.org/wiki/File:Laylay_Port_Boac_Marinduque.jpg",
+    imageCredit: "Harristing82 · CC BY-SA 3.0"
   }
 ];
 
